@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  min-width: 300px;
+  background: rgba(194, 185, 127, 0.6);
+  font-family: Lato;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 55px;
+	margin-bottom: 15px;
+	margin-top: 0px;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: #88665D;
+    font-weight: bold;
+}
+
+footer {
+	padding: 20px;
+    background: #FFFCE8;
+    color: #88665D;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+	nav ul li {
+	    margin: 20px;
+	    margin-top: 0px;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	#projects-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		color: #4C5454;
+	}
+}
+
+
+@media only screen and (min-width: 890px) {
+	#projects-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		color: #4C5454;
+	}
+}
+
+.project-tile {
+	background: #FFFCE8;
+	border: 1px solid;
+	border-radius: 3px;
+	margin: 3em;
+}
+
+.project-title {
+	border: 1px;
+	border-radius: 3px;
+	margin: 10px;
+	padding: 15px;
+	background: rgba(194, 185, 127, 0.8);
+	text-align: center;
+}
+
+.picture {
+	width: 100%;
+	height: 180px;
+}
+
+#navbar {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	text-align: right;
+	background: #FFFCE8;
+	border: 1px;
+	border-radius: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#welcome-section {
+	top: 0;
+	min-height: 55vh;
+	padding-top: 45vh;
+}
+
+#welcome-section h1 {
+	color: #88665D;
+	text-align: center;
+}
+
+#welcome-section p {
+	color: #4C5454;
+	text-align: center;
+}
+
+#projects {
+	background: white;
+	min-height: 55vh;
+}
+
+#contact {
+	margin-top: 15px;		
+	margin-bottom: 15px;
+	background: white;
+	min-height: 55vh;
+}
+
+#title-projects {
+	background: rgba(194, 185, 127, 0.8);
+	padding-bottom: 45px;
+	padding-top: 45px;
+	color: #88665D;
+	text-align: center;
+}
+
+#profile-link {
+	position: absolute;
+	margin: 4em;
+	padding: 2vw;
+	border: 1px;
+	background: rgba(194, 185, 127, 0.8);
+}
