@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="style.css">
+<input id="dark-mode" class="dark-mode-checkbox visually-hidden" type="checkbox">
+
+<div class="theme-container grow">
+  <label class="dark-mode-label" for="dark-mode">
+    Dark mode
+  </label>
+  <nav id="navbar" class="nav">
+    <header>Monty Python ipsum</header>
+    <ul>
+      <li><a class="nav-list" href="#About">About</a></li>
+      <li>
+        <a class="nav-list" href="#Work">Work</a>
+      </li>
+      <li>
+        <a class="nav-list" href="#Contact">Contact</a>
+      </li>
+  </nav>
+  
+  
+  <div class="wrapper">
+    <h1>CSS-only dark mode 🌚</h1>
+    
+    <p>This pen was written for the article <a href="https://kleinfreund.de/css-only-dark-mode/">CSS-only dark mode</a>.</p>
+
+    <p>Using the <code>:checked</code> pseudo-class selector, one can style descendants and subsequent siblings of a checkbox when it is in checked state.</p>
+    
+    <p>Having both a checkbox for enabling dark mode and an element containing all other content on the page on the same level of the DOM tree allows us to offer a CSS-only dark mode of a web page.</p>
+    
+    <p>A very nice implementation of this technique can be found on <a href="https://muan.co/">Mu-An Chiou’s website</a>. Her’s is the foundation for this implementation, so all credit goes to her!  🎉</p>
+    
+    <p>I made some small changes additions:</p>
+    
+    <ul>
+      <li>The dark mode checkbox has a focus style.</li>
+      <li>The content area grows to the viewport’s height so that the background color fills the viewport completely.</li>
+      <li>Theming is done by setting CSS custom properties in a context-sensitive way.</li>
+    </ul>
+  </div>
+  Dark Mode implementation heavily inspired by <a href="https://kleinfreund.de/css-only-dark-mode/">Philipp Rudloff's</a> and <a href="https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a">Marcin Wichary's</s>
+  </a> articles. Many Thanks! 
+</div>
