@@ -1,17 +1,25 @@
 :root {
+  --hue: 210; /* Blue */
+  --accent-hue: 25; /* Orange */
   /* Light theme */
-  --c-light-text:hsl(224, 42%, 9%);
-  --c-light-background: hsl(43, 54%, 92%);
-  --c-light-focus: hsl(9, 58%, 71%);
-  --c-light-interactive: hsl(206, 78%, 54%);
- 
+  --c-light-text: #333;
+  --c-light-background: #fff;
+  --c-light-focus: deepskyblue;
+  --c-light-interactive: mediumvioletred;
+  --c-light-text-color-highlight: hsl(var(--hue), 70%, 45%);
+  --c-light-text-color-background: hsl(var(--accent-hue), 45%, 70%);
+  --c-light-button-background: hsl(var(--accent-hue), 63%, 43%);
+  --c-light-button-text-color: black;
 
   /* Dark theme */
-  --c-dark-text: hsl(43, 54%, 92%);
-  --c-dark-background: hsl(224, 42%, 9%);
-  --c-dark-focus: hsl(237, 39%, 34%);
-  --c-dark-interactive: hsl(36, 63%, 69%);
-
+  --c-dark-text: hsl(var(--hue), 10%, 62%);;
+  --c-dark-background: hsl(var(--hue), 20%, 12%);
+  --c-dark-focus: deeppink;
+  --c-dark-interactive: hsl(var(--hue), 90%, 70%);
+  --c-dark-text-color-highlight: hsl(var(--accent-hue), 70%, 45%);
+  --c-dark-text-color-background: hsl(var(--hue), 45%, 70%);
+  --c-dark-button-background: hsl(var(--hue), 63%, 43%);
+  --c-dark-button-text-color: black;
 }
 
 .theme-container {
@@ -20,8 +28,7 @@
   --c-background: var(--c-light-background);
   --c-focus: var(--c-light-focus);
   --c-interactive: var(--c-light-interactive);
-
-  padding: 1.5rem;
+   padding: 1.5rem;
   color: var(--c-text);
   background-color: var(--c-background);
 }
@@ -32,6 +39,10 @@
   --c-background: var(--c-dark-background);
   --c-focus: var(--c-dark-focus);
   --c-interactive: var(--c-dark-interactive);
+  --c-light-text-color-highlight: var(--c-dark-text-color-highlight);
+  --c-light-text-color-background : var(--c-dark-text-color-background);
+  --c-light-button-background: var(--c-dark-button-background);
+  --c-light-button-text-color: var(--c-dark-button-text-color);
 }
 
 .dark-mode-label {
@@ -70,7 +81,6 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
 .visually-hidden {
   position: absolute;
-  z-index: 1;
   overflow: hidden;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -80,8 +90,6 @@ https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
   border: 0;
   white-space: nowrap; /* 1. */
 }
-
-
 
 /*
 * Grow content to viewport
@@ -123,6 +131,10 @@ body {
   font-size: 1.25em;
   line-height: 1.5;
 }
+::selection{
+  color: var(--c-light-text-color-highlight);
+  background: var(--c-light-text-color-background);
+}
 
 a {
   color: var(--c-interactive);
@@ -140,21 +152,21 @@ code {
   max-width: 600px;
 }
 .nav {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 50;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-}
+    position: fixed;
+    max-width: 290px;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    height: 150px;
+    background-color: greenyellow;
+  }
 .nav-list {
   display: flex;
   margin-right: 2rem;
 }
 
 .nav-list a {
-  display: block;
+  display: inline-block;
   font-size: 2.2rem;
   padding: 2rem;
 }
