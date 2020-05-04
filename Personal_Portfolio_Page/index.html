@@ -1,24 +1,33 @@
-<link rel="stylesheet" href="style.css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><!DOCTYPE html>
+<html id="main">
+<header id="header">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</header>
 <input id="dark-mode" class="dark-mode-checkbox visually-hidden" type="checkbox">
 
 <div class="theme-container grow">
   <label class="dark-mode-label" for="dark-mode">
     Dark mode
   </label>
-  <nav id="navbar" class="nav">
-    <ul>
-      <li><a class="nav-list" href="#About">About</a></li>
-      <li>
-        <a class="nav-list" href="#Work">Work</a>
-      </li>
-      <li>
-        <a class="nav-list" href="#Contact">Contact</a>
-      </li>
-  </nav>
-  
-  
-  <div class="wrapper">
-    <h1>CSS-only dark mode 🌚</h1>
+<div class="navigation">
+  <div class="navigation-container">
+    <nav>
+      <ul class="navigation-list">
+        <li class="navigation-list-text">
+          <a href="#welcome-section">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#acknowledgements">Acknowledgements</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+  <div class="wrapper" id="welcome-section">
+    <h1>I am Shishir</h1>
     
     <p>This pen was written for the article <a href="https://kleinfreund.de/css-only-dark-mode/">CSS-only dark mode</a>.</p>
 
@@ -36,6 +45,52 @@
       <li>Theming is done by setting CSS custom properties in a context-sensitive way.</li>
     </ul>
   </div>
-  Dark Mode implementation heavily inspired by <a href="https://kleinfreund.de/css-only-dark-mode/">Philipp Rudloff's</a> and <a href="https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a">Marcin Wichary's</s>
-  </a> articles. Many Thanks! 
-</div>
+  <div class="wrapper" id="projects">
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="wrapper" id="contact">
+    <h4>Contact me on</h4>
+    <ul>
+      <a href="https://codepen.io/shishir-kedlaya"><i class="fa fa-codepen"></i> Codepen</a>
+      <a href="https://github.com/shishir-kedlaya/"><i class="fa fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/shishir-kedlaya/"><i class="fa fa-linkedin"></i> LinkedIn</a>
+    </ul>
+   </div>
+  <div class="wrapper" id="acknowledgements">
+    Dark Mode implementation heavily inspired by <a href="https://kleinfreund.de/css-only-dark-mode/">Philipp Rudloff's</a> and <a href="https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a">Marcin Wichary's</a> articles. Many Thanks!
+  </div>
+  
