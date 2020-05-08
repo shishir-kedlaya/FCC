@@ -12,83 +12,84 @@
   <label class="dark-mode-label" for="dark-mode">
     Dark mode
   </label>
-<div class="navigation">
-  <div class="navigation-container">
-    <nav>
-      <ul class="navigation-list">
-        <li class="navigation-list-text">
-          <a href="#welcome-section">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-          <a href="#acknowledgements">Acknowledgements</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+
+<input type="checkbox" id="menu-toggle" />
+<label for="menu-toggle" class="menu-icon"><i class="fa fa-bars"></i></label>
+<div class="slideout-sidebar" id="navbar">
+  <ul>
+    <li><a href="#welcome-section">Home</a></li>
+    <li><a href="#projects">Project Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ul>
+  
 </div>
-  <div class="wrapper" id="welcome-section">
+
+  <div class="wrapper welcome-section" id="welcome-section">
     <h1>I am Shishir</h1>
     
-    <p>This pen was written for the article <a href="https://kleinfreund.de/css-only-dark-mode/">CSS-only dark mode</a>.</p>
-
-    <p>Using the <code>:checked</code> pseudo-class selector, one can style descendants and subsequent siblings of a checkbox when it is in checked state.</p>
-    
-    <p>Having both a checkbox for enabling dark mode and an element containing all other content on the page on the same level of the DOM tree allows us to offer a CSS-only dark mode of a web page.</p>
-    
-    <p>A very nice implementation of this technique can be found on <a href="https://muan.co/">Mu-An Chiou’s website</a>. Her’s is the foundation for this implementation, so all credit goes to her!  🎉</p>
-    
-    <p>I made some small changes additions:</p>
-    
-    <ul>
-      <li>The dark mode checkbox has a focus style.</li>
-      <li>The content area grows to the viewport’s height so that the background color fills the viewport completely.</li>
-      <li>Theming is done by setting CSS custom properties in a context-sensitive way.</li>
-    </ul>
+    <h3>I am a Product Analyst / Functional Consultant by day.</h3>
+    <h3>In my spare time, I am learning to code.</h3>
+    <h2>Welcome to my portfolio</h2>    
   </div>
-  <div class="wrapper" id="projects">
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="https://codepen.io/shishir-kedlaya/full/RwNBQpP">
-          <img src="https://github.com/shishir-kedlaya/FCC/raw/Personal_Portfolio_Page/Personal_Portfolio_Page/images/FCC_-_Tribute_Page.png" alt="Forest" width="300" height="200">
-        </a>
-        <div class="desc">FCC - Tribute Page</div>
+  <div class=" wrapper portfolio" id="projects">
+    <h2 class="text-center">Portfolio</h2>
+      <div class="portfolio-container">
+        <figure class="project-tile">
+            <a href="https://codepen.io/shishir-kedlaya/full/RwNBQpP" target="_blank">
+            <img src="https://github.com/shishir-kedlaya/FCC/raw/Personal_Portfolio_Page/Personal_Portfolio_Page/images/FCC_-_Tribute_Page.png">
+              <figcaption>
+                <h4>FCC - Tribute Page</h4>
+                <p>A simple tribute page project using HTML and CSS</p>
+              </figcaption>
+            </a>
+        </figure>
+          
+        <figure class="project-tile">
+            <a href="https://codepen.io/shishir-kedlaya/full/NWPLRWJ" target="_blank">
+            <img src="https://github.com/shishir-kedlaya/FCC/raw/Personal_Portfolio_Page/Personal_Portfolio_Page/images/FCC_-_Survey_Form.png">
+            <figcaption>
+              <h4>FCC - Survey Form</h4>
+              <p>A simple survey form using HTML and CSS</p>
+            </figcaption>
+            </a>
+        </figure>
+          
+        <figure class="project-tile">
+            <a href="https://codepen.io/shishir-kedlaya/full/RwWRaBJ" target="_blank">
+            <img src="https://raw.githubusercontent.com/shishir-kedlaya/FCC/Personal_Portfolio_Page/Personal_Portfolio_Page/images/FCC_-_Technical_Documentation.png">
+            <figcaption>
+              <h4>FCC - Technical Documentation</h4>
+              <p>A simple Technical Documentation page created in HTML and CSS using this awesome <a href="http://montypythonipsum.megert.se/?p=9&fc=on&hg=on&lob=on"> Python ipsum.</a></p>
+            </figcaption>
+            </a>
+        </figure>
+        <figure class="project-tile">
+          <a href="https://codepen.io/shishir-kedlaya/full/zYxMzpe" target="_blank">
+          <img src="https://github.com/shishir-kedlaya/FCC/raw/Personal_Portfolio_Page/Personal_Portfolio_Page/images/FCC_-_Product_Landing_Page.png">
+          <figcaption>
+            <h4>FCC - Product Landing Page</h4>
+            <p>A product landing page made with HTML and CSS.</p>
+          </figcaption>
+          </a>
+      </figure>
+       </div>
       </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="https://codepen.io/shishir-kedlaya/full/NWPLRWJ">
-          <img src="https://github.com/shishir-kedlaya/FCC/raw/Personal_Portfolio_Page/Personal_Portfolio_Page/images/FCC_-_Survey_Form.png" alt="Forest" width="300" height="200">
-        </a>
-        <div class="desc">FCC - Survey Form</div>
-      </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="https://codepen.io/shishir-kedlaya/full/RwWRaBJ">
-          <img src="https://raw.githubusercontent.com/shishir-kedlaya/FCC/Personal_Portfolio_Page/Personal_Portfolio_Page/images/FCC_-_Technical_Documentation.png" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">FCC - Technical Documentation</div>
-      </div>
-    </div>
-    <div class="responsive">
-      <div class="gallery">
-        <a target="_blank" href="https://codepen.io/shishir-kedlaya/full/zYxMzpe">
-          <img src="https://github.com/shishir-kedlaya/FCC/raw/Personal_Portfolio_Page/Personal_Portfolio_Page/images/FCC_-_Product_Landing_Page.png" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">FCC - Product Landing Page</div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
+ 
   <div class="wrapper" id="contact">
-    <h4>Contact me on</h4>
-    <ul>
+    <h2>Contact me on</h2>
+    <ul class="text-center">
       <a href="https://codepen.io/shishir-kedlaya"><i class="fa fa-codepen"></i> Codepen</a>
-      <a href="https://github.com/shishir-kedlaya/"><i class="fa fa-github"></i> GitHub</a>
+      <a id="profile-link" href="https://github.com/shishir-kedlaya/" target="_blank"><i class="fa fa-github"></i> GitHub</a>
       <a href="https://www.linkedin.com/in/shishir-kedlaya/"><i class="fa fa-linkedin"></i> LinkedIn</a>
     </ul>
    </div>
-  <div class="wrapper" id="acknowledgements">
-    Dark Mode implementation heavily inspired by <a href="https://kleinfreund.de/css-only-dark-mode/">Philipp Rudloff's</a> and <a href="https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a">Marcin Wichary's</a> articles. Many Thanks!
+  <div class="wrapper text-center" id="acknowledgements">
+    <h2> Acknowledgements</h2>
+   <p> Dark Mode implementation heavily inspired by <a href="https://kleinfreund.de/css-only-dark-mode/">Philipp Rudloff's</a> and <a href="https://medium.com/@mwichary/dark-theme-in-a-day-3518dde2955a">Marcin Wichary's</a> articles. Many Thanks!</p>
+    <p> Many thanks to <a href="https://codepen.io/james_zedd/pen/ZKVZWp">James Zedd</a> for his tutorial on a pure CSS slide out menu.</p>
+    <p>Many thanks to <a href="https://codepen.io/boniverski/pen/KrLgRK">Bosko Rabrenovic</a> for his tutorial on the Portfolio gallery.</p>
   </div>
+</div>
+  </html>
   
