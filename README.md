@@ -6,7 +6,7 @@ https://www.freecodecamp.org/learn
 
 |Challenge|Solution|View Online|
 |---|---|---|
-|[Tribute Page Challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)|[My Tribute Page solution](https://codepen.io/shishir-kedlaya/full/RwNBQpP)|[View in browser]()|
+|[Tribute Page Challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page)|[My Tribute Page solution](https://codepen.io/shishir-kedlaya/full/RwNBQpP)|[View Tribute Page in browser](https://shishir-kedlaya.github.io/Tribute_Page/)|
 |[Survey Form Challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)|[My Survey Form solution](https://codepen.io/shishir-kedlaya/full/NWPLRWJ)|[View Survey Form in browser](https://shishir-kedlaya.github.io/Survey_Form/)|
 |[Product Landing Page Challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page)|[My Product Landing Page solution](https://codepen.io/shishir-kedlaya/full/zYxMzpe)|[View Product Landing Page in browser](https://shishir-kedlaya.github.io/Product_Landing_Page/)|
 |[Technical Documentation Page Challenge](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)|[My Technical Documentation Page solution](https://codepen.io/shishir-kedlaya/full/RwWRaBJ)|[View Technical Documentation in browser](https://shishir-kedlaya.github.io/Technical_Documentation/)|
